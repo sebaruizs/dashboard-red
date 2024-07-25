@@ -1,10 +1,7 @@
 import streamlit as st
 import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
 import gspread
 from google.oauth2.service_account import Credentials
-from decimal import Decimal
 from datetime import datetime
 from dotenv import load_dotenv
 import os
