@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "fifth-octane-416622",
+  "private_key_id": "95d9004d619ae8bbd89082bc3e0e7ca586980861",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCulwhRkcicsaqE\nNg4sNRWmMSi1jfxuSes/iIezUY2xOxs7KDVm+EUT2HpomtDxhO+c8N0tGjScF3fq\ny+otm/Vt5h1ykviaNE3d3EEC1WDE4QZJ2rZDMylXdbgFxdYefS4SW/bi5oguaubg\nbHxGmvyvGOk9RYzcwQ8pMAzJDGZQXspV/1j0dyQ/5zHt53BU+9LmGtMm3rfYoVnj\nFCdMJ6L5orMtbHO7KxjjB/ISBTETtIrTwGZCIsXgUBwguyubR8yNqkon5nVG84CG\najp8QGlo8AtvYufeWxoaLG3jyTBg2dCs1WgHSjewZgKGwQZ6x6gTfhthvFmqH0zI\n/s7eq1Z/AgMBAAECggEAHBRtgZUFY3JNvwLkp6aIC1k3t2+VLHXWELtYO/Z/aARe\nHlcas6t1jLoSAfX4agfb8+1nXUQsNvitUEWordo6EIlkrhNGSaLk7SxqBlckP7YD\naWh0TP2TBh6IUOFfTTsL6GcDH749I94MsQaxvDdcMZs7lB+2BqFEW3b/b2x/nihE\nH/jDkpWCWSya2EHltpmr3x2Q36ZPan83VjXRYcvmcQzrj/4aukolSKzjNcn6TqAh\nvlR0nXBfvFnPKj/LubO+qB+mtFfAnJigHGcq1RSI2z7+0UJeWU3S0yRfUFljtcyD\n7vx1mOTAPVnI4clIGGfvW6WhWMV6OOZ8LJl6En/ymQKBgQDxTMUGqszbpsrrA6Ay\nkkL/V4ZZ5FXVQfN2aIF10pT7q+Lo2CoZYB6414+y8XHkr5XR+wXNsNTLKBW6uu7k\n6RsUsFMm72E/psWT9hVPlC/+4uI0joyviQJM5amx+8vNtm7gnfKHpzJFccHJHu3C\nSEd2S7HztDy78Pyh98oxMwm7BwKBgQC5OeC/t77In730+SX7BO6QCyOGpis1HxXk\nBuzn9eq2oVM2HCTEBR9/5uOQDFPPI51PfUU0a+1ARd7ODreF9uJUaVMiZSlR1suz\niV3cm4BxVFRYAex27fz6/Mp3sKVzr75JN3kOBuDADXWM87pmK6zgaoXCK+TMCr9t\nekcYJtcSyQKBgQCWPjy3aAXiBjp2lm1az6MTpgWrVvbyr/vNkEh7ekD1axL/9AhS\ngHzgjqeUva0yvPlGI0x7xEzaqfzNpbM1qMcJ3LgJmCcvIMII3MJsKFKyG8bI/rEu\nYtqh0qYUgjllvt/Oz8nBGSO+BZSpi65yt9p3F66XlXPzeZtzpfupIqQ+ZQKBgD87\nf/tTGgFZbzrDF3EzRNHNy6n67kMrQojeyF+Dt0Xzmvmc7/wvF4rNYqBZZP8Q1HI/\nfLGhqpPHhoFnysUj/C3+6s+SI2H55v56hZ17RITr2gNVXMlZA4UXaXMkzcbJlzdd\nhakBNha6QYgF6Htaq6DNHK6l12zEuocAOGcJU2DpAoGANrX7BlaQJxTyhqDOAg/f\n8F/30i3aHK+QgK5Kgb/thboMA09bANqz8UkwNFKfSA2h0vznqcrpBysxLxx8dhJi\n6tunLRXhD79U+ExLpk9EwawhlTfleY4OkpkBA4GK74nLHvfpD5eeeX+3L5nzAnzB\nucEBBDR0nPYTmyz+NPM+SmY=\n-----END PRIVATE KEY-----\n",
+  "client_email": "lectura-de-google-sheets@fifth-octane-416622.iam.gserviceaccount.com",
+  "client_id": "103053960897477746922",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/lectura-de-google-sheets%40fifth-octane-416622.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
