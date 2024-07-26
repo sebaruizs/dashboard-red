@@ -98,8 +98,7 @@ resumen_autos = pd.merge(autos[['Chapa', 'Color']], pagos_autos_filtered_grouped
 # Inicializar la aplicación
 app = Dash(__name__)
 
-# Inicializar la aplicación
-app = Dash(__name__)
+server = app.server
 
 # Layout de la aplicación
 app.layout = html.Div([
