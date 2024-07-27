@@ -1,6 +1,6 @@
 dash
 pandas
 gspread
-google-auth=
+google-auth
 python-dotenv
 gunicorn
