@@ -89,7 +89,7 @@ dfs, titles = get_data()
 resumen_filtered, resumen_autos, total_mensual, total_mensual_autos, mes_y_anio = process_data(dfs)
 
 # Inicializar la aplicación
-app = Dash(__name__)
+app = Dash(__name__, title='Drive One')
 server = app.server
 
 # Layout de la aplicación
