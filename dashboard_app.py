@@ -90,6 +90,7 @@ resumen_filtered, resumen_autos, total_mensual, total_mensual_autos, mes_y_anio 
 
 # Inicializar la aplicación
 app = Dash(__name__)
+server = app.server
 
 # Layout de la aplicación
 app.layout = html.Div([
