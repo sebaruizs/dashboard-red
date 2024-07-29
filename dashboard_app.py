@@ -29,6 +29,9 @@ def get_data():
         titles.append(title)
     return dfs, titles
 
+def format_number(num):
+    return f"{int(num):,}".replace(",", ".")
+
 def process_data(dfs):
     resumen = dfs[0]
     resumen = resumen[resumen['Nombre'] != ''] # Elimino las filas vacias
@@ -77,11 +80,17 @@ def process_data(dfs):
     resumen_filtered = resumen_filtered[resumen_filtered['Nombre'] != 'Julia']
     resumen_filtered['Importe Pagado'] = resumen_filtered['Importe Pagado'].astype(int)
 
+    # Aplicar formato de número con separadores de miles
+    resumen_filtered['Importe Pagado'] = resumen_filtered['Importe Pagado'].apply(format_number)
+
     total_mensual = pagos_filtered['Importe pagado'].sum()
 
     total_mensual_autos = pagos_autos_filtered['Importe pagado'].sum()
 
     resumen_autos = pd.merge(autos[['Chapa', 'Color']], pagos_autos_filtered_grouped, on='Chapa', how='left')
+
+    # Aplicar formato de número con separadores de miles
+    resumen_autos['Importe pagado'] = resumen_autos['Importe pagado'].apply(format_number)
 
     return resumen_filtered, resumen_autos, total_mensual, total_mensual_autos, mes_y_anio
 
@@ -95,8 +104,8 @@ server = app.server
 # Layout de la aplicación
 app.layout = html.Div([
     html.H1(f'Resumen del mes de {mes_y_anio}', id='mes-anio-header'),
-    html.H2(f'Ingreso del mes: {total_mensual:,.0f}', id='ingreso-header'),
-    html.H2(f'Egresos del mes: {total_mensual_autos:,.0f}', id='egreso-header'),
+    html.H2(f'Ingreso del mes: {format_number(total_mensual)}', id='ingreso-header'),
+    html.H2(f'Egresos del mes: {format_number(total_mensual_autos)}', id='egreso-header'),
     html.Button('Actualizar Datos', id='update-button'),
     html.Div(id='tables-container', children=[
         html.Div([
@@ -137,8 +146,8 @@ def update_tables(n_clicks):
     resumen_filtered, resumen_autos, total_mensual, total_mensual_autos, mes_y_anio = process_data(dfs)
 
     return (f'Resumen del mes de {mes_y_anio}',
-            f'Ingreso del mes: {total_mensual:,.0f}',
-            f'Egresos del mes: {total_mensual_autos:,.0f}',
+            f'Ingreso del mes: {format_number(total_mensual)}',
+            f'Egresos del mes: {format_number(total_mensual_autos)}',
             [
                 html.Div([
                     html.H3('Resumen Ingresos:'),
